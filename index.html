@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>IQ API Test</title>
+    <script type="text/javascript" src="./api_calls.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <script src="./api_calls.js"></script>
     <header>   
       <!-- Jumbotron -->
       <div class="jumbotron jumbotron-fluid" style="background-image: url(assets/minimalist-mountains-landscape-scenery-n4-2048x1152.jpg); background-repeat: no-repeat; background-size: cover;">
@@ -27,20 +27,28 @@
     <div class="centre_div">
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><b>GET</b> Payload Requests</a>
+          <a class="nav-link active" id="get_payload-tab" data-toggle="tab" href="#get_payload" role="tab" aria-controls="get_payload" aria-selected="true"><b>GET</b> Payload Requests</a>
         </li>
         <li class="nav-item" role="presentation">
-          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><b>POST</b> Payload Requests</a>
+          <a class="nav-link" id="post_payload-tab" data-toggle="tab" href="#post_payload" role="tab" aria-controls="post_payload" aria-selected="true"><b>POST</b> Payload Requests</a>
         </li>
         <li class="nav-item" role="presentation">
-          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><b>Generic</b> SQL Payload Requests</a>
+          <a class="nav-link" id="generic_sql_payload-tab" data-toggle="tab" href="#generic_sql_payload" role="tab" aria-controls="generic_sql_payload" aria-selected="true"><b>Generic SQL</b> Payload Requests</a>
         </li>
       </ul>
       <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+        <div class="tab-pane fade show active" id="get_payload" role="tabpanel" aria-labelledby="get_payload-tab">
+          This is the GET payload request tab
+        </div>
+        <div class="tab-pane fade" id="post_payload" role="tabpanel" aria-labelledby="post_payload-tab">
+          This is the POST payload request tab
+        </div>
+        <div class="tab-pane fade" id="generic_sql_payload" role="tabpanel" aria-labelledby="generic_sql_payload-tab">
+          This is the Generic SQL payload request tab
+        </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
